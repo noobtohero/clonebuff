@@ -40,7 +40,7 @@ function getVisibleLines(value: string, maxLines: number): string[] {
 export function Input({
   onSubmit,
   disabled = false,
-  placeholder = 'Type your prompt...',
+  placeholder = 'Type your prompt... (Enter to send, Shift+Enter newline)',
   promptHistory = [],
 }: InputProps) {
   const [value, setValue] = useState('');
@@ -255,7 +255,7 @@ export function Input({
             : isMultiLine
               ? `${lineCount} lines, ${charCount} chars`
               : `${charCount} chars`}
-          {' · '}{historyIndex !== null ? '↑↓ history' : `Ln ${currentLine}, Col ${currentCol}`}
+          {' · '}{historyIndex !== null ? '↑↓ history' : `Ln ${currentLine}, Col ${currentCol} · Enter send · Shift+Enter newline · ↑↓ history`}
           {disabled && ' · processing...'}
         </Text>
       </Box>
