@@ -2,6 +2,9 @@
   "name": "clonebuff",
   "version": "0.1.0",
   "description": "An AI coding assistant for your terminal — clone of Codebuff CLI with OpenRouter API",
+  "publishConfig": {
+    "access": "public"
+  },
   "module": "src/index.tsx",
   "bin": {
     "clonebuff": "bin/clonebuff"
