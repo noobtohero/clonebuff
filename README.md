@@ -126,8 +126,6 @@ Visit https://openrouter.ai/keys to get a free API key.
 
 <div align="center">
 
-[![Test](https://github.com/your-username/clonebuff/actions/workflows/test.yml/badge.svg)](https://github.com/your-username/clonebuff/actions/workflows/test.yml)
-
 </div>
 
 ## ✨ Features
@@ -156,14 +154,22 @@ Visit https://openrouter.ai/keys to get a free API key.
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/clonebuff.git
+git clone https://github.com/noobtohero/clonebuff.git
 cd clonebuff
 
 # Install dependencies
 bun install
 
-# Run Clonebuff
+# Run Clonebuff (from this repo)
 bun start
+
+# Optional: run from anywhere
+bun link
+clonebuff
+
+# Or (npm global)
+npm i -g .
+clonebuff
 ```
 
 On first launch, Clonebuff will guide you through setting up your OpenRouter API key.
