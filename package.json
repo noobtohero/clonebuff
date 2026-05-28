@@ -1,0 +1,27 @@
+{
+  "name": "clonebuff",
+  "version": "0.1.0",
+  "description": "An AI coding assistant for your terminal — clone of Codebuff CLI with OpenRouter API",
+  "module": "src/index.tsx",
+  "type": "module",
+  "bin": {
+    "clonebuff": "src/index.tsx"
+  },
+  "private": false,
+  "scripts": {
+    "start": "bun src/index.tsx",
+    "test": "bun test",
+    "test:watch": "bun test --watch"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/react": "^19.2.15"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "ink": "^7.0.4",
+    "react": "^19.2.6"
+  }
+}
