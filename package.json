@@ -3,10 +3,10 @@
   "version": "0.1.0",
   "description": "An AI coding assistant for your terminal — clone of Codebuff CLI with OpenRouter API",
   "module": "src/index.tsx",
-  "type": "module",
   "bin": {
-    "clonebuff": "src/index.tsx"
+    "clonebuff": "bin/clonebuff"
   },
+  "type": "module",
   "private": false,
   "scripts": {
     "start": "bun src/index.tsx",
