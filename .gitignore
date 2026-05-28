@@ -33,5 +33,10 @@ report.[0-9]_.[0-9]_.[0-9]_.[0-9]_.json
 # clonebuff checkpoint and config data
 .clonebuff/
 
+# project files to ignore
+.agents/
+clonebuff-spec.md
+PLAN.md
+
 # Finder (MacOS) folder config
 .DS_Store
